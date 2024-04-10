@@ -1,0 +1,66 @@
+/* Thiết lập font chữ */
+body {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Courier";
+    background-color: #fff5e4;
+    color: #ff9494;
+    display: block;
+    margin: 8px;
+}
+
+/* Phần chính của trang */
+#valentineQuestion {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Button style */
+.answerButton {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: "courier";
+    margin-bottom: 20px ;
+    border: 2px solid #ffe3e1;
+    box-shadow: 1px 1px 2px #ff9494;
+    background-color: #ffe3e1;
+    color: #e67373;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answerButton:hover {
+    background-color: #cc0000; /* Màu nền đỏ sáng khi di chuột */
+}
+
+/* Ảnh */
+.responsive {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+.button {
+    appearance: auto;
+    text-rendering: auto;
+    color: initial; /* Sử dụng màu chữ mặc định */
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0;
+    padding: 1px 6px; /* Thay thế padding-block và padding-inline */
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
