@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lam limh tinh </title>
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <style>
-    #noButton {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam limh tinh</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+      #noButton {
     z-index: 10;
     position: absolute;
     transition: all 0.3s;
+    left: 55%; /* Di chuyển phần tử đến giữa theo chiều ngang */
+      transform: translateX(-40%);
   }
-  body {
-    text-align: center; /* Căn giữa nội dung trong body theo chiều ngang */
+  #yes {
+    left: 40%;
+    transform: translateX(-60%);
+
 }
-.button {  
+  .button {  
     display: inline-block; /* Hiển thị nút như một phần tử inline-block để nó có thể căn giữa */
     padding: 1px 6px;
     border-width: 2px;
@@ -26,25 +29,26 @@
     box-sizing: border-box;
 }
 
-</style>
-  <body>
+    </style>
+</head>
+<body>
     <div id="valentineQuestion"><b>Đi chơi hông á cậu</b></div>
-    <button class="answerButton" onclick="location.href='https://datphannn.github.io/demo2/test2.html'">
-      Coáaa
+    <button class="answerButton" id="yes" onclick="location.href='https://datphannn.github.io/demo2/test2.html'">
+        Coáaa
     </button>
-    <button class="answerButton" id="noButton">Hong chịu đâu </button>
-    <br />
-    <img src="https://phamvulinh18.github.io/Date/cat.gif" alt="cat asking question" class="responsive" />
+    <button class="answerButton" id="noButton">Hong chịu đâu</button>
+    <br>
+    <img src="https://phamvulinh18.github.io/Date/cat.gif" alt="cat asking question" class="responsive">
     <script>
         const noButton = document.getElementById('noButton');
       
         noButton.addEventListener('mouseover', () => {
-          const X = Math.floor(Math.random() * (window.innerWidth - 150));
-          const Y = Math.floor(Math.random() * (window.innerHeight - 150));
+            const X = Math.floor(Math.random() * (window.innerWidth - 150));
+            const Y = Math.floor(Math.random() * (window.innerHeight - 150));
       
-          noButton.style.left = `${X}px`;
-          noButton.style.top = `${Y}px`;
+            noButton.style.left = `${X}px`;
+            noButton.style.top = `${Y}px`;
         });
-      </script>
+    </script>
 </body>
 </html>
